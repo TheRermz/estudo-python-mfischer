@@ -21,15 +21,21 @@ def exibir_nome_programa():
     print("Sabor Express")
 
 def exibir_opcoes():
+    """Essa função exibe as opções de uso do app
+    """
     print("1. Cadastrar restaurante")
     print("2. Listar restaurante")
     print("3. Alternar estado do Restaurante")
     print("4. Sair\n")
 
 def finalizar_app():
+    """Essa função finaliza o app
+    """
     exibe_subtitulo("Finalizar app")
 
 def cadastrar_restaurante():
+    """Essa função cadastra o restaurante
+    """
     exibe_subtitulo("Cadastro de novos restaurantes")
     nome_restaurante = input("Digite o nome do restaurante que deseja cadastrar: ")
     categoria = input(f"Digite a categoria do restaurante {nome_restaurante}: ")
@@ -41,6 +47,8 @@ def cadastrar_restaurante():
 
 def listar_restaurante():
     exibe_subtitulo("Lista de restaurantes")
+    """Essa função lista os restaurantes
+    """
 
     print(f"{'Nome do Restaurante'.ljust(24)} | {'Categoria'.ljust(20)} | Status")
     for restaurante in restaurantes:
@@ -52,6 +60,8 @@ def listar_restaurante():
     volta_menu()
 
 def alterna_ativo():
+    """Essa função alterna o status do restaurante
+    """
     exibe_subtitulo("Alternando estado do restaurante")
     nome_restaurante = input(f"Digite o nome do restaurante que deseja alternar o estado:\n")
     restaurante_encontrado = False
