@@ -4,7 +4,7 @@
 
 #     Modifique o valor de um dos itens no dicionário (por exemplo, atualize a idade da pessoa);
 #     Adicione um campo de profissão para essa pessoa;
-#     Remova um item do dicionário.
+
 
 pessoas = [
     {"nome":  "Ana Julia", "idade": "19", "cidade": "Limeira"},
@@ -27,9 +27,4 @@ for pessoa in pessoas:
         profissao = "desempregado"
 
 
-    del pessoa["cidade"]
-
     print(f'EDITADO {nome}, {idade}, {cidade}, {profissao}')
-
-pessoas.pop(2) # remover um item do dicionáriio
-print(pessoas)
