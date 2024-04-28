@@ -11,16 +11,19 @@ def volta_menu():
     main()
 
 def exibe_subtitulo(texto):
+    linha = "*" * (len(texto))
     os.system("clear")
+    print(linha)
     print(texto)
+    print(linha)
 
 def exibir_nome_programa():
-    print("Sabor Express\n")
+    print("Sabor Express")
 
 def exibir_opcoes():
     print("1. Cadastrar restaurante")
     print("2. Listar restaurante")
-    print("3. Ativar restaurante")
+    print("3. Alternar estado do Restaurante")
     print("4. Sair\n")
 
 def finalizar_app():
@@ -37,13 +40,14 @@ def cadastrar_restaurante():
     volta_menu()
 
 def listar_restaurante():
-    exibe_subtitulo("Lista de restaurantes\n")
+    exibe_subtitulo("Lista de restaurantes")
 
+    print(f"{'Nome do Restaurante'.ljust(24)} | {'Categoria'.ljust(20)} | Status")
     for restaurante in restaurantes:
         nome_restaurante = restaurante["nome"]
         categoria = restaurante["categoria"]
-        ativo = restaurante["ativo"]
-        print(f". - {nome_restaurante} | {categoria} | {ativo} ")
+        ativo = "Ativado" if restaurante["ativo"] else "Desativado"
+        print(f". - {nome_restaurante.ljust(20)} | {categoria.ljust(20)} | {ativo} ")
 
     volta_menu()
 
