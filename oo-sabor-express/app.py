@@ -4,6 +4,7 @@ restaurante_praca = Restaurante("Praça", "Gourmet")
 restaurante_praca.recebe_avaliacao("Gui", 10)
 restaurante_praca.recebe_avaliacao("Lais", 8)
 restaurante_praca.recebe_avaliacao("Emy", 5)
+restaurante_praca.recebe_avaliacao("Emy", 50) # não entra nas notas cadastradas
 restaurante_mexicano = Restaurante("Mexican Food", "Mexicana")
 restaurante_japones = Restaurante("Japa", "Japonesa")
 
