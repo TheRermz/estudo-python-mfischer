@@ -1,8 +1,10 @@
 from model.cardapio.item_cardapio import ItemCardapio
-class Prato(ItemCardapio):
-    def __init__(self, nome, preco, descricao):
+
+class Sobremesa(ItemCardapio):
+    def __init__(self, nome, preco, tipo, tamanho):
         super().__init__(nome, preco)
-        self._descricao = descricao
+        self._tipo = tipo
+        self._tamanho = tamanho
 
     def __str__(self):
         return self._nome

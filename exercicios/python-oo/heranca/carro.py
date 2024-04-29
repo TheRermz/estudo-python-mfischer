@@ -9,3 +9,6 @@ class Carro(Veiculo):
     def __str__(self):
         status = "Ligado" if self._ligado == True else "Desligado"
         return f"Marca: {self._marca}, Modelo: {self._modelo}, Portas: {self._portas}, Status: {status}"
+
+    def ligar(self):
+        print(f"O carro {self._modelo} está ligado")

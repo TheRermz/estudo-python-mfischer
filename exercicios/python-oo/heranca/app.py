@@ -9,7 +9,7 @@ moto1 = Moto("Harley-Davidson", "Street 750", "Esportiva")
 moto2 = Moto("Honda", "CB 500", "Casual")
 moto3 = Moto("Yamaha", "MT-09", "Esportiva")
 
-# 8- Exiba as Informações: Para cada instância, imprima no console as informações utilizando o método __str__.
+
 
 print(carro1)
 print(carro2)
